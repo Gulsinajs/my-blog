@@ -22,3 +22,34 @@ export const posts = [
         subTitle: "Lorem ipsum dipsum"
     }
 ];
+
+export const blogs1 = [
+    {
+        image: "https://www.w3schools.com/w3images/woods.jpg",
+        title: "TITLE HEADING",
+        titleDate: "April 7, 2014",
+        text: "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.\n" +
+              "Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna\n" +
+              "enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non\n" +
+              "congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed\n" +
+              "vitae justo condimentum, porta lectus vitae, ultricies congue gravida\n" +
+              "diam non fringilla.",
+        numberOfComments:"0"
+    }
+
+];
+
+export const blogs2 = [
+    {
+        image: "https://www.w3schools.com/w3images/bridge.jpg",
+        title: "BLOG ENTRY",
+        titleDate: "April 2, 2014",
+        text: "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.\n" +
+            "Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna\n" +
+            "enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non\n" +
+            "congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed\n" +
+            "vitae justo condimentum, porta lectus vitae, ultricies congue gravida\n" +
+            "diam non fringilla.",
+        numberOfComments:"2"
+    }
+];
