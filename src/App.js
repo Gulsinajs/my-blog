@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Catalog from "./pages/Catalog/Catalog";
 import Iphone from "./pages/Iphone/Iphone";
 import MacBook from "./pages/MacBook/MacBook";
+import Product from "./pages/Product/Product";
 
 function App() {
     return (
@@ -28,16 +29,17 @@ function App() {
         //     <Footer/>
         // </>
         <>
-            <Header/>
             <BrowserRouter>
+                <Header/>
                 <Routes>
-                    <Route path="/" element={<Main pageName="Main"/>}/>
+                    <Route path="/" element={<Main/>}/>
                     <Route path="/about" element={<About text="Здесь должна быть инфо о нас"/>}/>
                     <Route path="/contacts" element={<Contacts text="Phone number (555)101010"/>}/>
                     <Route path="/catalog" element={<Catalog/>}>
-                        <Route path="iphone" element={<Iphone text="Появляется iphone"/>}/>
-                        <Route path="macBook" element={<MacBook text="Появляется macbook"/>}/>
+                        <Route path="iphone" element={<Iphone/>}/>
+                        <Route path="macBook" element={<MacBook text="Появляется macBook"/>}/>
                     </Route>
+                    <Route path="/product/:id" element={<Product/>}/>
                     <Route path="/menu" element={<Menu/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
