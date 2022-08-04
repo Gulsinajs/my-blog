@@ -1,47 +1,45 @@
-.iphone ul li {
-    list-style: none;
-    display: inline;
-    margin-right: 20px;
-    font-size: 20px;
+.watch {
+    background-color: #fff;
 }
 
-.iphone a {
+.watch a {
     text-decoration: none;
+    overflow: hidden;
 }
 
-.title {
+.watch h1 {
     text-align: left;
     margin-left: 30px;
 }
 
-.iphoneCard {
+.watchCard {
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-.iphoneBox {
-    width: 232px;
+.watchBox {
+    width: 240px;
     text-align: center;
 }
 
-.iphone img {
+.watch img {
     width: 185px;
     height: 218px;
 }
 
-.iphoneBox h2 {
+.watchBox h2 {
     font-size: 16px;
     line-height: 120%;
 }
 
-.iphoneBox h3 {
+.watchBox h3 {
     font-size: 20px;
     line-height: 120%;
 }
 
-.iphoneBox button {
+.watchBox button {
     cursor: pointer;
     margin: 10px 0 20px;
 }

@@ -10,7 +10,6 @@ const title = {
 const Product = () => {
     const params = useParams();
     const product = iphones.find(item => item.id === +params.id);
-    console.log(product);
 
     return (
         <div className={styles.container}>

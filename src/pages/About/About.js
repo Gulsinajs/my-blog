@@ -1,12 +1,31 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styles from "./About.module.css";
 
-const About =(data)=> {
-    console.log(data);
+const About = () => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch('//jsonplaceholder.typicode.com/users')
+            .then(response => {
+                if (response.status === 200){
+                    return response.json();
+                } else {
+                 alert('Произошла ошибка. Статус ошибки:' + response.status);
+                }
+            })
+            .then(data => setUsers(data))
+    }, [])
+
     return (
         <div className={styles.about}>
             <h1>Страничка о нас</h1>
-            <p>{data.text}</p>
+            <ul>
+                {
+                    users.map(item=> {
+                        return <li>{item.name}</li>
+                    })
+                }
+            </ul>
         </div>
     )
 }
