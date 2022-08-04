@@ -11,6 +11,7 @@ import Catalog from "./pages/Catalog/Catalog";
 import Iphone from "./pages/Iphone/Iphone";
 import Product from "./pages/Product/Product";
 import Watch from "./pages/Watch/Watch";
+import ProductWatch from "./pages/ProductWatch/ProductWatch";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/catalog/iphone" element={<Iphone/>}/>
                     <Route path="/catalog/watch" element={<Watch/>}/>
                     <Route path="/product/:id" element={<Product/>}/>
+                    <Route path="productWatch/:id" element={<ProductWatch/>}/>
                     <Route path="/menu" element={<Menu/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>

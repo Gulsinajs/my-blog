@@ -9,10 +9,11 @@ const Watch = () => {
     const params = useParams();
     const [searchParams, setSearchParams] = useSearchParams();
     const watch = watches.find(item => item.id === +params.id);
-    console.log(useSearchParams());
+    // console.log(useSearchParams());
+
     const watchArray = watches.map(item => (
        <div className={styles.watchBox}>
-           <Link to="catalog/watch">
+           <Link to={`/productWatch/${item.id}`}>
                <img src={item.img} alt=""/>
                <h2>{item.name}</h2>
                <h3>{item.price}<span> сом</span></h3>
