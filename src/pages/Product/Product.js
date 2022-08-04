@@ -1,5 +1,5 @@
 import React from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useSearchParams} from 'react-router-dom';
 import {iphones} from '../../constants/iphones';
 import styles from './Product.module.css';
 
@@ -9,7 +9,10 @@ const title = {
 
 const Product = () => {
     const params = useParams();
-    const product = iphones.find(item => item.id === +params.id);
+    const [searchParams, setSearchParams] = useSearchParams();
+    let product = iphones.find(item => item.id === +params.id);
+    // console.log(useSearchParams()[0]);
+    console.log(typeof +searchParams.get('quantity'));
 
     return (
         <div className={styles.container}>
@@ -20,8 +23,13 @@ const Product = () => {
                 <h2>{product.name}</h2>
                 <h3>{product.price}<span> сом</span></h3>
                 <p>{product.description}</p>
+                <p className={styles.quantity_status}>
+                    {+searchParams.get('quantity') === 0 ? 'нет в наличии' : 'товар в наличии'}
+                </p>
+                <p>
+                    {+searchParams.get('memory')}
+                </p>
             </div>
-
         </div>
     );
 };
