@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams, useSearchParams} from 'react-router-dom';
 import {iphones} from '../../constants/iphones';
+import {watches} from "../../constants/watches";
 import styles from './Product.module.css';
 
 const title = {
@@ -13,6 +14,7 @@ const Product = () => {
     const product = iphones.find(item => item.id === +params.id);
     // console.log(useSearchParams()[0]);
     // console.log(typeof +searchParams.get('quantity'));
+    // const productWatch = watches.find(item => item.id === +params.id);
 
     return (
         <div className={styles.container}>

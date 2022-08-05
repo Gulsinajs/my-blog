@@ -14,7 +14,7 @@ const Header = () => {
                 <li><NavLink className={setActive} to="/contacts">Контакты</NavLink></li>
                 <li><NavLink className={setActive} to="/menu">Меню</NavLink></li>
                 <li><NavLink className={setActive} to="/catalog">Каталог</NavLink></li>
-                </ul>
+            </ul>
         </div>
     );
 };

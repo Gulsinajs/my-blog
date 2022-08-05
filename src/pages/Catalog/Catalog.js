@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import styles from './Catalog.module.css';
 
@@ -19,6 +19,7 @@ const Catalog = () => {
                         <img src="https://istore.kg/media/category/iphones.webp" alt=""/>
                         <h2>Iphone</h2>
                     </NavLink>
+
                 </div>
             </div>
         </div>
